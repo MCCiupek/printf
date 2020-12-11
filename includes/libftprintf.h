@@ -6,14 +6,14 @@
 /*   By: mcciupek <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 12:08:13 by mcciupek          #+#    #+#             */
-/*   Updated: 2020/12/11 11:40:00 by mciupek          ###   ########.fr       */
+/*   Updated: 2020/12/11 12:18:06 by mciupek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFTPRINTF_H
 # define LIBFTPRINTF_H
 
-# include "../srcs/libft/libft.h"
+# include "../libft/libft.h"
 # include <stdarg.h>
 
 typedef struct	s_params

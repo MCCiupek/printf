@@ -6,7 +6,7 @@
 #    By: mciupek <mciupek@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 15:18:07 by mciupek           #+#    #+#              #
-#    Updated: 2020/12/11 11:46:50 by mciupek          ###   ########.fr        #
+#    Updated: 2020/12/11 12:16:50 by mciupek          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ DIRINC		= includes/
 
 DIRSRC		= srcs/
 
-DIRLIB		= $(DIRSRC)libft/
+DIRLIB		= libft/
 
 LIB		= $(DIRLIB)libft.a
 
