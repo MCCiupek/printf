@@ -6,11 +6,11 @@
 /*   By: mciupek <mciupek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/25 16:57:45 by mciupek           #+#    #+#             */
-/*   Updated: 2020/12/11 11:26:13 by mciupek          ###   ########.fr       */
+/*   Updated: 2020/12/11 11:39:18 by mciupek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "../includes/libftprintf.h"
 
 static void		init_params(t_params *params)
 {

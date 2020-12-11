@@ -6,7 +6,7 @@
 #    By: mciupek <mciupek@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/18 15:18:07 by mciupek           #+#    #+#              #
-#    Updated: 2020/12/04 17:52:46 by mciupek          ###   ########.fr        #
+#    Updated: 2020/12/11 11:46:50 by mciupek          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,23 +24,25 @@ SRCS		= ft_printf.c\
 		ft_flags.c\
 		ft.c\
 
-DIRLIB		= libft/
+DIRINC		= includes/
+
+DIRSRC		= srcs/
+
+DIRLIB		= $(DIRSRC)libft/
 
 LIB		= $(DIRLIB)libft.a
-
-DIR		= ./
 
 CC		= clang
 
 RM		= rm -f
 
-FLAGS		= -Wall -Wextra -Werror -g3 -fsanitize=address
+FLAGS		= -Wall -Wextra -Werror# -g3 -fsanitize=address
 
-INC		= -I $(DIRLIB)
+INC		= -I $(DIRINC) #$(DIRLIB)
 
-OBJ		= $(addprefix $(DIR), $(SRCS:.c=.o))
+OBJ		= $(addprefix $(DIRSRC), $(SRCS:.c=.o))
 
-$(DIR)%.o:	$(DIR)%.c
+$(DIRSRC)%.o:	$(DIRSRC)%.c
 	$(CC) $(FLAGS) $(INC) -o $@ -c $<
 
 $(NAME):	$(LIB) $(OBJ)
