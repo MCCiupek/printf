@@ -6,7 +6,7 @@
 /*   By: mciupek <mciupek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/25 16:57:45 by mciupek           #+#    #+#             */
-/*   Updated: 2020/12/03 17:44:00 by mciupek          ###   ########.fr       */
+/*   Updated: 2020/12/11 11:26:13 by mciupek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,11 @@ static size_t	ft_cast(char c, t_params *params, va_list args)
 	return (i);
 }
 
-int			ft_printf(const char *format, ...)
+int				ft_printf(const char *format, ...)
 {
-	size_t			i;
-	char				c;
-	va_list			args;
+	size_t		i;
+	char		c;
+	va_list		args;
 	t_params	params;
 
 	i = 0;
